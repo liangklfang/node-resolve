@@ -4,7 +4,7 @@ var resolve = require('../');
 
 var res = resolve.sync('tap', { basedir: process.cwd() });
 console.log('basedir表示此时从这里开始查找node_modules',res);
-
+//注意：此时我们指定了从process.cwd开始逐层开始查找node_modules集合
 
 
 // var res = resolve.sync('tap', { basedir: __dirname });
