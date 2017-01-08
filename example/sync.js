@@ -22,5 +22,6 @@ console.log(res);
 //因为这里是相对路径，所以他不会再node_modules中查找，而是会直接查找相应的文件
 
 // console.log('cwd---',process.cwd());
-// var notNode_Modules=resolve.sync('qinliang.js',{basedir:process.cwd()});
-// console.log('不在node_modules中的模块',notNode_Modules);
+var notNode_Modules=resolve.sync('./../qinliang.js',{basedir:process.cwd()});
+console.log('不在node_modules中的模块',notNode_Modules);
+//process.cwd表示的是运行node的文件夹，而dirname表示存放js的文件路径
